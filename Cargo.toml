@@ -1,0 +1,11 @@
+[package]
+name = "not_redis"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+dashmap = "5.4"
+rand = "0.8"
+[profile.release]
+debug = true
